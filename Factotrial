@@ -1,0 +1,36 @@
+import math
+import random
+
+class NumAnlic(): #Declaramos una clase 
+
+	def setNum(self, Num):
+		self.Num = Num
+		self.i = Num
+	def Reset(self):
+		self.Num = self.i	
+	def getNum(self):
+		return self.Num
+	def getFact(self):
+		if self.Num == 0:
+			return 1
+		else:
+			self.Num = self.Num-1
+			return (self.Num+1)*N.getFact(N)	
+
+
+
+print("Calculando Factorial de un numero con clases en Python")
+
+N = NumAnlic   #Instanciamos nuestro objeto N del tipo NumAnalic
+
+N.setNum(N,random.randint(1,9)) #Asignamos a N un numero del 1 al 9
+
+print(N.getNum(N))
+N.Reset(N);
+
+Archivo = open("Programs/Resultado.txt",'w')
+Archivo.write("El Factorial de " + str(N.getNum(N)) + " es " + str(N.getFact(N)))
+N.Reset(N)
+Archivo.close();
+print(open("Programs/Resultado.txt").read())
+
